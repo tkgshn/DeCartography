@@ -8,7 +8,7 @@ To reduce the likelihood of a sybil attack by verifying that each wallet belongs
 
 To address the often incorrect assumption that funders are inherently uncoordinated, Gitcoin introduced Pairwise Bounding, which “is a way of muting the impact of groups of contributors who contribute to the same grants as each other”. (Pairwise Bounding - Gitcoin support) While this may reduce possibilities for collusion, it also may lead to the punishing of positive coordinated behavior; the foundation of grassroots movements
 
-**Our Solution: **
+**Our Solution**
 
 Both to reduce the possibility of collusion between individuals who are in small social circles and to improve the possibility of making grants more pluralistic, we propose the use of a Decentralized Cartography Protocol to provide dispersion ratings among wallets (“nodes”). A higher dispersion rating would indicate that the nodes interact with disparate protocols and therefore may have a higher plurality. A lower dispersion rating may suggestion that the nodes are in communication with each other more regularly. 
 
