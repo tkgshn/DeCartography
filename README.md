@@ -17,7 +17,7 @@ To address the often incorrect assumption that funders are inherently uncoordina
 **Our Solution**
 
 Both to reduce the possibility of collusion between individuals who are in small social circles and to improve the possibility of making grants more pluralistic, we propose the use of a Decentralized Cartography Protocol to provide dispersion ratings among wallets (“nodes”). A higher dispersion rating would indicate that the nodes interact with disparate protocols and therefore may have a higher plurality. A lower dispersion rating may suggestion that the nodes are in communication with each other more regularly. 
-
+[![Image from Gyazo](https://i.gyazo.com/6e670275c375b09d5008e3c87d77265e.png)](https://gyazo.com/6e670275c375b09d5008e3c87d77265e)
 
 **Notes**
 * So as not to punish positive coordinated behavior

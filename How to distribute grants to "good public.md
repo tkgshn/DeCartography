@@ -19,6 +19,7 @@ How do we decide "together" who gets what?
   - Quadratic Voting has been proposed experimentally to express individual preferences.
     - Not "one person, one vote
     - Vote by spending credits
+    [![Image from Gyazo](https://i.gyazo.com/364104f17c9edbc5d6186531673e24c3.png)](https://gyazo.com/364104f17c9edbc5d6186531673e24c3)
     - You can spend more credits than usual to cast multiple votes when you think it is important, and you can not vote when you are not interested.
       - But the more widely supported you are by many people, the fewer credits you spend in total
       - The ethical underpinning of this is that "what is supported by many people is good."
