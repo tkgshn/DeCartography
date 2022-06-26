@@ -4,9 +4,9 @@ Both voting and quadratic funding allow for the possibility of collusion. In gov
 
 **Current Solutions:**
 
-To reduce the likelihood of a sybil attack by verifying that each wallet belongs to a separate individual, Gitcoin Passport allows users to create a decentralized identity record consisting of social credentials such as Twitter, FaceBook (Meta) or ENS. Other protocols, such as open blockchain analytics platform Breadcrumbs.app allows for fund tracing, which may also prevent sybil attacks. However, neither addresses the possibility of collusion between individuals. 
+To reduce the likelihood of a sybil attack by verifying that each wallet belongs to a separate individual, [Gitcoin Passport](https://passport.gitcoin.co/) allows users to create a decentralized identity record consisting of social credentials such as Twitter, FaceBook (Meta) or ENS. Other protocols, such as open blockchain analytics platform [Breadcrumbs.app](https://www.breadcrumbs.app/) allows for fund tracing, which may also prevent sybil attacks. However, neither addresses the possibility of collusion between individuals. 
 
-To address the often incorrect assumption that funders are inherently uncoordinated, Gitcoin introduced Pairwise Bounding, which “is a way of muting the impact of groups of contributors who contribute to the same grants as each other”. (Pairwise Bounding - Gitcoin support) While this may reduce possibilities for collusion, it also may lead to the punishing of positive coordinated behavior; the foundation of grassroots movements
+To address the often incorrect assumption that funders are inherently uncoordinated, Gitcoin introduced Pairwise Bounding, which “is a way of muting the impact of groups of contributors who contribute to the same grants as each other”. ([Pairwise Bounding - Gitcoin support](https://support.gitcoin.co/gitcoin-policy/policy/fraud-deterrent-mechanisms/pairwise-bounding)) While this may reduce possibilities for collusion, it also may lead to the punishing of positive coordinated behavior; the foundation of grassroots movements
 
 **Our Solution**
 
