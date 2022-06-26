@@ -12,4 +12,4 @@ As for the "public chain and the goverment being similar," the reason is that wh
 (You should be able to understand this story if you read the Social Contract Theory.)
 
 (If you think about it, don't you think that the public chain and the goverment are similar?
-Next, I will write about [How to distribute grants to "good public goods"]().
+Next, I will write about [How to distribute grants to "good public goods"](/How%20to%20distribute%20grants%20to%20%22good%20public.md).
