@@ -1,3 +1,9 @@
+You may read their notes:
+- [Why Public Chain should optimize grant distribution for "good public goods"](/Why%20Public%20Chain%20should%20optimize%20grant%20d.md)
+- [How to distribute grants to "good public goods"](/How%20to%20distribute%20grants%20to%20%22good%20public.md)
+
+[![Image from Gyazo](https://i.gyazo.com/2552c594dcc6bf48f9498498f90ed60f.png)](https://gyazo.com/2552c594dcc6bf48f9498498f90ed60f)
+
 **The Problem:**
 
 Both voting and quadratic funding allow for the possibility of collusion. In governance, when voting for a particular outcome, parties may collude to ensure that a vote goes in their favor. In quadratic funding, the problem may be even more pronounced. A group could create multiple wallets for a sybil attack or collude with others within their social spheres to receive heightened matching funds. Collusion is a concern that must be addressed across protocols and DAOs. 
