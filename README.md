@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qMx8eF8FC-NjiFbHvDdI6Fd_WI87V1LZ?usp=sharing#scrollTo=Qutl8Rz0aNDA]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qMx8eF8FC-NjiFbHvDdI6Fd_WI87V1LZ?usp=sharing#scrollTo=Qutl8Rz0aNDA)]
 
 
 You may read their notes:
