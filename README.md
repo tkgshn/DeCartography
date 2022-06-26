@@ -1,6 +1,6 @@
 You may read their notes:
 - [Why Public Chain should optimize grant distribution for "good public goods"](/whyneedgrants.md)
-- [How to distribute grants to "good public goods"](/howneedgrants.md)
+- [How to distribute grants to "good public goods"](/Howtodistributegrants.md)
 
 [![Image from Gyazo](https://i.gyazo.com/2552c594dcc6bf48f9498498f90ed60f.png)](https://gyazo.com/2552c594dcc6bf48f9498498f90ed60f)
 
