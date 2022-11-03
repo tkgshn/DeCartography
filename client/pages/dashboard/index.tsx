@@ -21,7 +21,7 @@ const Dashboard: NextPage = () => {
     },
     {
       chain: "Polygon",
-      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE81",
+      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE82",
       reward: 1234,
     },
   ];
@@ -65,6 +65,7 @@ const Dashboard: NextPage = () => {
         <DataTable
           columns={getTableData().columns}
           records={getTableData().records}
+          idAccessor="address"
           className="cursor-pointer"
           withBorder
           borderRadius="sm"

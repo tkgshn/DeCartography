@@ -1,9 +1,12 @@
-import React, { useCallback, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import ForceGraph3d, { NodeObject } from "react-force-graph-3d";
+import { useContainerDimensions } from "../hooks/useContainerDimensions";
 
-const Graph = (props: ISimple3DForceGraphProps) => {
+const Graph = (props: GraphProps) => {
   const dt = JSON.parse(JSON.stringify(props.data));
   const ref = useRef();
+  const { width: canvasWidth, height: canvasHeight } =
+    useContainerDimensions(ref);
   const handleClick = useCallback(
     (node: NodeObject) => {
       // Camera points to node from outside
@@ -27,24 +30,29 @@ const Graph = (props: ISimple3DForceGraphProps) => {
     [ref]
   );
   return (
-    <ForceGraph3d
-      ref={ref}
-      nodeLabel={(d) => `<span style="color: grey">${d.id}</span>`}
-      backgroundColor="rgba(0,0,0,0)"
-      nodeColor={(obj) => {
-        return (obj as { fillColor: string }).fillColor;
-      }}
-      linkColor={() => "white"}
-      linkWidth={1}
-      linkOpacity={1}
-      graphData={dt}
-      onNodeClick={handleClick}
-    />
+    <div className={props.className}>
+      <ForceGraph3d
+        width={canvasWidth || 888} // FIXME: Won't be set
+        height={canvasHeight || 888} // FIXME: Won't be set
+        ref={ref}
+        nodeLabel={(d) => `<span style="color: grey">${d.id}</span>`}
+        backgroundColor="rgba(0,0,0,0)"
+        nodeColor={(obj) => {
+          return (obj as { fillColor: string }).fillColor;
+        }}
+        linkColor={() => "white"}
+        linkWidth={1}
+        linkOpacity={1}
+        graphData={dt}
+        onNodeClick={handleClick}
+      />
+    </div>
   );
 };
 
-interface ISimple3DForceGraphProps {
+interface GraphProps {
   data: Graph.DataObject;
+  className: string;
 }
 
 export default Graph;

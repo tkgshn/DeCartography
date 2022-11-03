@@ -1,8 +1,9 @@
 import { Title } from "@mantine/core";
 import type { GetServerSideProps, NextPage } from "next";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import Graph from "../../components/Graph";
 import data from "../../examples/data.json";
+const Graph = dynamic(() => import("../../components/Graph"), { ssr: false });
 
 export const getServerSideProps: GetServerSideProps = async (_) => ({
   props: {
