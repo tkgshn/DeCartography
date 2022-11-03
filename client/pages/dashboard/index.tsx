@@ -1,6 +1,9 @@
 import type { NextPage, GetServerSideProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { DataTable } from "mantine-datatable";
+import { Badge } from "@mantine/core";
+import { useRouter } from "next/router";
 
 export const getServerSideProps: GetServerSideProps = async (_) => ({
   props: {
@@ -9,6 +12,47 @@ export const getServerSideProps: GetServerSideProps = async (_) => ({
 });
 
 const Dashboard: NextPage = () => {
+  const router = useRouter();
+  const EXAMPLE = [
+    {
+      chain: "Ethereum",
+      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE81",
+      reward: 1234,
+    },
+    {
+      chain: "Polygon",
+      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE81",
+      reward: 1234,
+    },
+  ];
+
+  const getChainColor = (chain: string) => {
+    if (chain === "Ethereum") return "dark";
+    if (chain === "Polygon") return "pink";
+    return "";
+  };
+
+  const getTableData = () => {
+    return {
+      columns: [
+        {
+          accessor: "chain",
+          render: ({ chain }: { chain: string }) => (
+            <Badge color={getChainColor(chain)} radius="sm">
+              {chain.slice(0, 3).toUpperCase()}
+            </Badge>
+          ),
+        },
+        {
+          accessor: "address",
+        },
+        {
+          accessor: "reward",
+        },
+      ],
+      records: EXAMPLE,
+    };
+  };
   return (
     <div className="h-full w-full">
       <Head>
@@ -18,22 +62,20 @@ const Dashboard: NextPage = () => {
       </Head>
 
       <main className="flex flex-col w-full align-center">
-        <h1 className="text-center color-red">DeCartography</h1>
-        <p className="">hoge</p>
+        <DataTable
+          columns={getTableData().columns}
+          records={getTableData().records}
+          className="cursor-pointer"
+          withBorder
+          borderRadius="sm"
+          withColumnBorders
+          striped
+          highlightOnHover
+          onRowClick={({ address }) => {
+            router.push("dashboard/" + address);
+          }}
+        />
       </main>
-
-      <footer className="">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className="">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 };

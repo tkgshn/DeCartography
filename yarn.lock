@@ -4412,6 +4412,11 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+mantine-datatable@^1.7.14:
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/mantine-datatable/-/mantine-datatable-1.7.14.tgz#fa58c2d61d9ed12d03d9423fa7e5cf9c1dbab28a"
+  integrity sha512-KXOi5Vg+RIMXzPBT33YTc6MhbLMA2/PwQgOYsTSB6eJJ4xQh2VwjXIpzNkUkAFeqlBDflSYW7kBi8klUzhRWCg==
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
