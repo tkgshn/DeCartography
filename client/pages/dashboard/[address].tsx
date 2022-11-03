@@ -1,6 +1,8 @@
 import { Title } from "@mantine/core";
 import type { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
+import Graph from "../../components/Graph";
+import data from "../../examples/data.json";
 
 export const getServerSideProps: GetServerSideProps = async (_) => ({
   props: {
@@ -14,6 +16,7 @@ const Address: NextPage = () => {
   return (
     <>
       <Title>{address}</Title>
+      <Graph data={data} />
     </>
   );
 };

@@ -18,12 +18,18 @@
     "@mantine/hooks": "^5.6.4",
     "@mantine/next": "^5.6.4",
     "@tabler/icons": "^1.109.0",
+    "d3": "^7.6.1",
+    "d3-force": "^3.0.0",
     "mantine-datatable": "^1.7.14",
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-force-graph-3d": "^1.21.13",
+    "react-uuid": "^2.0.0"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.0",
+    "@types/d3-force": "^3.0.3",
     "@types/node": "18.11.7",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
