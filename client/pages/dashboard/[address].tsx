@@ -17,7 +17,7 @@ const Address: NextPage = () => {
   return (
     <>
       <Title>{address}</Title>
-      <Graph data={data} />
+      <Graph data={data} className="w-full h-full" />
     </>
   );
 };

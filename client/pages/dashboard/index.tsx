@@ -16,12 +16,7 @@ const Dashboard: NextPage = () => {
   const EXAMPLE = [
     {
       chain: "Ethereum",
-      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE81",
-      reward: 1234,
-    },
-    {
-      chain: "Polygon",
-      address: "0xDbe86ffb79198aDC59574c65F8D9132e269eDE82",
+      address: "0xF60fB76e6AD89364Af3ffE72C447882bFe390331",
       reward: 1234,
     },
   ];
