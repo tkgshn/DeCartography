@@ -2,8 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 const Etherscan = require("node-etherscan-api"); // TODO: import type definition file.
 
 type ResBody = {
-  balance: string;
-  unit: string;
+  txs: any[];
 };
 
 export default async function handler(
@@ -11,9 +10,10 @@ export default async function handler(
   res: NextApiResponse<ResBody>
 ) {
   const etherscan = new Etherscan(process.env.ETHERSCAN_API_KEY);
-  const unit = "eth";
-  const balance = await etherscan.getAccountBalance(req.query.address, {
-    unit,
-  });
-  res.status(200).json({ balance, unit });
+  const txs = await etherscan
+    .getTransactions(req.query.address)
+    .then((txList: any[]) => {
+      return txList.map((txItem: any) => txItem.hash);
+    });
+  res.status(200).json({ txs });
 }
